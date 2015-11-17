@@ -12,6 +12,28 @@ With git ssh access to git.irontec.com properly [configured](http://doc.gitlab.c
 npm i --save git+ssh://git@git.irontec.com:internet/node-asterisk-amqp.git
 ```
 
+## Usage
+
+```js
+// create an instance from the factory
+var asteriskAMQP = require('node-asterisk-amqp')({
+    host: nconf.get('ASTERISK_AMQP_HOST'),
+    port: nconf.get('ASTERISK_AMQP_PORT'),
+    login: nconf.get('ASTERISK_AMQP_LOGIN'),
+    password: nconf.get('ASTERISK_AMQP_PASSWORD')
+}, logger);
+
+var isaacConnector = require('node-isaac')(logger);
+
+// Listen to events
+asteriskAMQP.on('asterisk.agents', function(agents) {
+});
+asteriskAMQP.on('asterisk.queues', function(queues) {
+});
+```
+
+[Here](https://git.irontec.com/internet/node-asterisk-amqp/blob/master/DOCUMENTATION.md) you can read the full documentation
+
 ## Tests
 
 ```sh
