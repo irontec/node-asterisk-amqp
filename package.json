@@ -1,0 +1,35 @@
+{
+  "name": "node-asterisk-amqp",
+  "version": "1.0.0",
+  "description": "NodeJS wrapper around asterisk amqp connection layer",
+  "main": "index.js",
+  "repository": "https://git.irontec.com/internet/veroski-crm-operativo.git",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "node_modules/eslint/bin/eslint.js lib"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^1.9.0"
+  },
+  "dependencies": {
+    "amqp": "^0.2.4",
+    "lodash.assign": "^3.2.0",
+    "lodash.foreach": "^3.0.3",
+    "string": "^3.3.1"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "env": {
+      "node": true
+    }
+  },
+  "mdastConfig": {
+    "plugins": {
+      "lint": {
+        "maximum-line-length": 200
+      }
+    }
+  }
+}
