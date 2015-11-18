@@ -118,6 +118,15 @@ Event fired with asterisk queues
 | queues.members.extension       | `string` | Member extension                     |
 | queues.members.name            | `string` | Member name                          |
 
+#### Members status
+
+| Key | Value     |
+| --- | ---       |
+| 1   | 'IDLE'    |
+| 2   | 'INUSE'   |
+| 6   | 'RINGING' |
+| x   | 'UNKNOWN' |
+
 #### Example
 
 ```js
