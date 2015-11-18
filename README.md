@@ -50,7 +50,7 @@ npm test
 
 ## License
 
-[EUPL v1.1](https://raw.githubusercontent.com/irontec/node-asterisk/master/LICENSE.txt)
+[EUPL v1.1](https://raw.githubusercontent.com/irontec/node-asterisk-amqp/master/LICENSE.txt)
 
 ```
 Copyright 2015 Irontec SL
