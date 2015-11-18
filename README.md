@@ -1,29 +1,25 @@
-# node-asterisk-amqp
+# asterisk-amqp
 
-NodeJS wrapper around asterisk amqp connection layer
+Node.js wrapper around asterisk amqp connection layer
 
 ## Installation
 
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
 
-With git ssh access to git.irontec.com properly [configured](http://doc.gitlab.com/ce/ssh/README.html), install the library on your project
-
 ```sh
-npm i --save git+ssh://git@git.irontec.com:internet/node-asterisk-amqp.git
+npm i --save asterisk-amqp
 ```
 
 ## Usage
 
 ```js
 // create an instance from the factory
-var asteriskAMQP = require('node-asterisk-amqp')({
+var asteriskAMQP = require('asterisk-amqp')({
     host: nconf.get('ASTERISK_AMQP_HOST'),
     port: nconf.get('ASTERISK_AMQP_PORT'),
     login: nconf.get('ASTERISK_AMQP_LOGIN'),
     password: nconf.get('ASTERISK_AMQP_PASSWORD')
 }, logger);
-
-var isaacConnector = require('node-isaac')(logger);
 
 // Listen to events
 asteriskAMQP.on('asterisk.agents', function(agents) {
@@ -32,7 +28,7 @@ asteriskAMQP.on('asterisk.queues', function(queues) {
 });
 ```
 
-[Here](https://git.irontec.com/internet/node-asterisk-amqp/blob/master/DOCUMENTATION.md) you can read the full documentation
+[Here](https://github.com/irontec/node-asterisk-amqp/blob/master/doc/DOCUMENTATION.md) you can read the full documentation
 
 ## Tests
 

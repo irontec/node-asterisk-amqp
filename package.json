@@ -1,23 +1,53 @@
 {
-  "name": "node-asterisk-amqp",
+  "name": "asterisk-amqp",
   "version": "1.0.0",
-  "description": "NodeJS wrapper around asterisk amqp connection layer",
+  "description": "Node.js wrapper around asterisk amqp connection layer",
+  "keywords": "asterisk, amqp, wrapper, VoIP",
+  "homepage": "https://github.com/irontec/node-asterisk-amqp",
+  "bugs": {
+      "url" : "https://github.com/irontec/node-asterisk-amqp/issues",
+      "email" : "internet@irontec.com"
+  },
+  "license": "EUPL",
+  "author": {
+      "name": "Irontec SL",
+      "email" : "internet@irontec.com",
+      "url" : "https://www.irontec.com/"
+  },
+  "contributors": {
+      "name": "Aitor Llamas Jiménez",
+      "email" : "aitorllj93@gmail.com",
+      "url" : "https://github.com/aitorllj93"
+  },
+  "files": [
+      "index.js",
+      "lib",
+      "test",
+      "doc",
+      "README.md",
+      "package.json"
+  ],
   "main": "index.js",
-  "repository": "https://git.irontec.com/internet/veroski-crm-operativo.git",
+  "directories":{
+      "lib":"./lib",
+      "doc": "./doc"
+  },
+  "repository": "irontec/node-asterisk-amqp",
   "scripts": {
     "test": "npm run lint",
     "lint": "node_modules/eslint/bin/eslint.js lib"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "eslint": "^1.9.0"
   },
   "dependencies": {
     "amqp": "^0.2.4",
     "lodash.assign": "^3.2.0",
     "lodash.foreach": "^3.0.3",
     "string": "^3.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^1.9.0"
+  },
+  "engines" : {
+      "node" : ">=0.12"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
