@@ -19,7 +19,7 @@ var asteriskAMQP = require('asterisk-amqp')({
     port: nconf.get('ASTERISK_AMQP_PORT'),
     login: nconf.get('ASTERISK_AMQP_LOGIN'),
     password: nconf.get('ASTERISK_AMQP_PASSWORD')
-}, logger);
+});
 
 // Listen to events
 asteriskAMQP.on('asterisk.agents', function(agents) {
@@ -29,6 +29,21 @@ asteriskAMQP.on('asterisk.queues', function(queues) {
 ```
 
 [Here](https://github.com/irontec/node-asterisk-amqp/blob/master/doc/DOCUMENTATION.md) you can read the full documentation
+
+## Debugging
+
+asterisk-amqp uses [debug](https://www.npmjs.com/package/debug) module for logs
+
+In order to get logs from asterisk-amqp you have to add the values to the DEBUG env variable like in the example
+
+| Key                   | Prints            |
+| ---                   | ------            |
+| 'asterisk-amqp:info'  | Connector info    |
+
+```sh
+DEBUG="asterisk-amqp:info" node myapp.js
+```
+
 
 ## Tests
 

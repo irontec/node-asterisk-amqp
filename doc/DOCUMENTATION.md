@@ -2,7 +2,7 @@
 
 ## API Reference
 
-### ( config, [logger] ) ⇒ AsteriskAMQPConnector
+### ( config ) ⇒ AsteriskAMQPConnector
 
 Factory function, returns an AsteriskAMQPConnector instance
 
@@ -13,7 +13,6 @@ Factory function, returns an AsteriskAMQPConnector instance
 | config.port     | `number` | Connection port                              |
 | config.login    | `string` | Authentication username                      |
 | config.password | `string` | Authentication password                      |
-| [logger]        | `Object` | Object to use as logger, defaults to console |
 
 #### Example
 
@@ -23,7 +22,7 @@ var asteriskAMQPConnector = require('node-asterisk-amqp')({
     port: nconf.get('ASTERISK_AMQP_PORT'),
     login: nconf.get('ASTERISK_AMQP_LOGIN'),
     password: nconf.get('ASTERISK_AMQP_PASSWORD')
-}, logger);
+});
 ```
 
 ### asteriskAMQPConnector.on(event, callback)
