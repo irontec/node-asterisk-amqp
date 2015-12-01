@@ -5,35 +5,32 @@
   "keywords": "asterisk, amqp, wrapper, VoIP",
   "homepage": "https://github.com/irontec/node-asterisk-amqp",
   "bugs": {
-      "url" : "https://github.com/irontec/node-asterisk-amqp/issues",
-      "email" : "internet@irontec.com"
+    "url": "https://github.com/irontec/node-asterisk-amqp/issues",
+    "email": "internet@irontec.com"
   },
-  "license" : {
-      "type" : "EUPL",
-      "url" : "https://raw.githubusercontent.com/irontec/node-asterisk-amqp/master/LICENSE.txt"
-  },
+  "license": "EUPL-1.1",
   "author": {
-      "name": "Irontec SL",
-      "email" : "internet@irontec.com",
-      "url" : "https://www.irontec.com/"
+    "name": "Irontec SL",
+    "email": "internet@irontec.com",
+    "url": "https://www.irontec.com/"
   },
   "contributors": {
-      "name": "Aitor Llamas Jiménez",
-      "email" : "aitorllj93@gmail.com",
-      "url" : "https://github.com/aitorllj93"
+    "name": "Aitor Llamas Jiménez",
+    "email": "aitorllj93@gmail.com",
+    "url": "https://github.com/aitorllj93"
   },
   "files": [
-      "index.js",
-      "lib",
-      "test",
-      "doc",
-      "README.md",
-      "package.json"
+    "index.js",
+    "lib",
+    "test",
+    "doc",
+    "README.md",
+    "package.json"
   ],
   "main": "index.js",
-  "directories":{
-      "lib":"./lib",
-      "doc": "./doc"
+  "directories": {
+    "lib": "./lib",
+    "doc": "./doc"
   },
   "repository": "irontec/node-asterisk-amqp",
   "scripts": {
@@ -42,15 +39,18 @@
   },
   "dependencies": {
     "amqp": "^0.2.4",
+    "debug": "^2.2.0",
     "lodash.assign": "^3.2.0",
+    "lodash.create": "^3.1.1",
     "lodash.foreach": "^3.0.3",
     "string": "^3.3.1"
   },
   "devDependencies": {
+    "cz-conventional-changelog": "^1.1.4",
     "eslint": "^1.9.0"
   },
-  "engines" : {
-      "node" : ">=0.12"
+  "engines": {
+    "node": ">=0.12"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -63,6 +63,11 @@
       "lint": {
         "maximum-line-length": 200
       }
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
