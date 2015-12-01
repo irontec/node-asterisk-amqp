@@ -1,6 +1,6 @@
 {
   "name": "asterisk-amqp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Node.js wrapper around asterisk amqp connection layer",
   "keywords": "asterisk, amqp, wrapper, VoIP",
   "homepage": "https://github.com/irontec/node-asterisk-amqp",
