@@ -2,7 +2,7 @@
   "name": "asterisk-amqp",
   "version": "1.0.4",
   "description": "Node.js wrapper around asterisk amqp connection layer",
-  "keywords": "asterisk, amqp, wrapper, VoIP",
+  "keywords": ["asterisk", "amqp", "wrapper", "VoIP"],
   "homepage": "https://github.com/irontec/node-asterisk-amqp",
   "bugs": {
     "url": "https://github.com/irontec/node-asterisk-amqp/issues",
@@ -14,11 +14,11 @@
     "email": "internet@irontec.com",
     "url": "https://www.irontec.com/"
   },
-  "contributors": {
+  "contributors": [{
     "name": "Aitor Llamas Jiménez",
     "email": "aitorllj93@gmail.com",
     "url": "https://github.com/aitorllj93"
-  },
+  }],
   "files": [
     "index.js",
     "lib",
