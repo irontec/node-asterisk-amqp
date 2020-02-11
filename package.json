@@ -1,6 +1,6 @@
 {
   "name": "asterisk-amqp",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Node.js wrapper around asterisk amqp connection layer",
   "keywords": [
     "asterisk",
